@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "nombre": "Empanada de carne",
+    "precio": 2500,
+    "ingredientes": ["carne", "papa", "masa"],
+    "disponible": true
+  }
+]
