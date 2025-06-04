@@ -1,0 +1,17 @@
+name: Validar JSON
+
+on:
+  push:
+    paths:
+      - 'data/data.json'
+
+jobs:
+  validar-json:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar el repositorio
+        uses: actions/checkout@v3
+
+      - name: Verificar formato JSON
+        run: python -m json.tool data/data.json
